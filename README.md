@@ -4,7 +4,7 @@ A KiCAD symbol and footprint for the Vishay LCD-016N002B-CFH-ET 16×2 character 
 
 ## How This Happened
 
-I ordered an LCD kit from Amazon, went and found the Vishay LCD-016N002B-CFH-ET datasheet, made the footprint and symbol for it, and then the actual module that arrived had 16 pins — not 18. Turns out it was a generic HD44780-compatible display, not the Vishay RGB backlight variant I had designed for. It didn't help that the amazon names the displays as just LCD1602.
+I ordered an LCD kit from Amazon, went and found the Vishay LCD-016N002B-CFH-ET datasheet, made the footprint and symbol for it, and then the actual module that arrived had 16 pins — not 18. Turns out it was a generic HD44780-compatible display, not the Vishay RGB backlight variant I had designed for. It didn't help that the amazon names the displays as just LCD1602, there goes 3 hours of my life.
 
 So this library is for a part I don't own and can't test. Use it at your own risk, and maybe check what's actually in your kit before you spin a board in KiCAD.
 
