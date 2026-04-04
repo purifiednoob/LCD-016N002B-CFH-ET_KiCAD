@@ -4,17 +4,16 @@ A KiCAD symbol and footprint for the Vishay LCD-016N002B-CFH-ET 16×2 character 
 
 ## How This Happened
 
-I ordered an LCD kit from Amazon, went and found the Vishay LCD-016N002B-CFH-ET datasheet, made the footprint and symbol for it, and then the actual module that arrived had 16 pins — not 18. Turns out it was a generic HD44780-compatible display, not the Vishay RGB backlight variant I had designed for.
+I ordered an LCD kit from Amazon, went and found the Vishay LCD-016N002B-CFH-ET datasheet, made the footprint and symbol for it, and then the actual module that arrived had 16 pins — not 18. Turns out it was a generic HD44780-compatible display, not the Vishay RGB backlight variant I had designed for. It didn't help that the amazon names the displays as just LCD1602.
 
-So this library is for a part I don't own and can't test. Use it at your own risk, and maybe check what's actually in your kit before you spin a board.
+So this library is for a part I don't own and can't test. Use it at your own risk, and maybe check what's actually in your kit before you spin a board in KiCAD.
 
 ## Files
 
 ```
 LCD_016N002B-CFH-ET/
 ├── LCD_016N002B-CFH-ET.kicad_mod   # Footprint
-├── LCD_016N002B-CFH-ET.kicad_sym   # Schematic symbol
-└── LCD_016N002B-CFH-ET.step        # 3D model
+└── LCD_016N002B-CFH-ET.kicad_sym   # Schematic symbol
 ```
 
 ## Pin Reference
@@ -42,21 +41,13 @@ LCD_016N002B-CFH-ET/
 
 ## Installation
 
-### Footprint
+1. Clone or download this repo and put it somewhere permanent on your machine — KiCAD will need to reference it every time you open a project.
 
-1. Clone this repo somewhere permanent on your machine.
-2. In KiCAD, open **Preferences → Manage Footprint Libraries**.
-3. Click the **+** button to add a new entry.
-4. Set the format to **KiCAD** and browse to the `LCD_016N002B-CFH-ET` folder.
-5. Give it a nickname (e.g. `Vishay_LCD`) and click OK.
+2. Open KiCAD and add the symbol library: **Preferences → Manage Symbol Libraries → +**, then browse to `LCD_016N002B-CFH-ET/LCD_016N002B-CFH-ET.kicad_sym`.
 
-### Symbol
+3. Add the footprint library: **Preferences → Manage Footprint Libraries → +**, then browse to the `LCD_016N002B-CFH-ET` folder itself (not the `.kicad_mod` file).
 
-1. In KiCAD, open **Preferences → Manage Symbol Libraries**.
-2. Click the **+** button to add a new entry.
-3. Browse to `LCD_016N002B-CFH-ET/LCD_016N002B-CFH-ET.kicad_sym`.
-4. Give it a nickname (e.g. `Vishay_LCD`) and click OK.
-5. The symbol will appear in the symbol chooser under that library name.
+4. Give both libraries the same nickname (e.g. `Vishay_LCD`) so they're easy to find in the chooser.
 
 ## Datasheet
 
