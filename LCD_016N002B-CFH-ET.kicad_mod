@@ -1,0 +1,127 @@
+(footprint "LCD_016N002B-CFH-ET"
+  (version 20221018)
+  (generator pcbnew)
+  (description "Vishay 16x2 Character LCD, RGB LED backlight, 18-pin 2.54mm pitch, 80x36mm, doc 37484")
+  (tags "LCD 16x2 character display HD44780 RGB backlight Vishay")
+
+  (attr through_hole)
+
+  ;; ──────────────────────────────────────────────
+  ;; Reference and Value text
+  ;; ──────────────────────────────────────────────
+  (fp_text reference "REF**"
+    (at 40 -3.5)
+    (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "LCD_016N002B-CFH-ET"
+    (at 40 39.5)
+    (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  ;; ──────────────────────────────────────────────
+  ;; MODULE ORIGIN NOTE
+  ;; Origin (0,0) = Pin 1 pad center
+  ;; Pin 1 is at datasheet coords (8.0, 1.8) from bottom-left corner.
+  ;; Module bottom-left corner is therefore at (-8.0, -1.8) relative to pin 1.
+  ;; ──────────────────────────────────────────────
+
+  ;; ──────────────────────────────────────────────
+  ;; F.Fab – actual module outline (80 x 36 mm)
+  ;; Bottom-left corner: (-8.0, -1.8), top-right: (72.0, 34.2)
+  ;; ──────────────────────────────────────────────
+  (fp_rect
+    (start -8.0 -1.8)
+    (end   72.0 34.2)
+    (layer "F.Fab")
+    (width 0.1)
+  )
+
+  ;; Viewing area outline on F.Fab (66.0 x 16.0 mm)
+  ;; VA left edge: 7.55 from board left = 7.55 - 8.0 = -0.45
+  ;; VA top edge:  board top - 10.3 = 34.2 - 10.3 = 23.9  -> bottom = 23.9 - 16.0 = 7.9
+  (fp_rect
+    (start -0.45 7.9)
+    (end   65.55 23.9)
+    (layer "F.Fab")
+    (width 0.05)
+  )
+
+  ;; ──────────────────────────────────────────────
+  ;; F.SilkS – silkscreen outline (inset 0.12 from Fab)
+  ;; ──────────────────────────────────────────────
+  (fp_rect
+    (start -7.88 -1.68)
+    (end   71.88 34.08)
+    (layer "F.SilkS")
+    (width 0.12)
+  )
+
+  ;; Pin 1 indicator triangle on silkscreen
+  (fp_poly
+    (pts (xy -1.0 0.7) (xy 1.0 0.7) (xy 0 -0.7))
+    (layer "F.SilkS")
+    (width 0.12)
+  )
+
+  ;; ──────────────────────────────────────────────
+  ;; F.Courtyard – 0.5 mm clearance around module
+  ;; ──────────────────────────────────────────────
+  (fp_rect
+    (start -8.5 -2.3)
+    (end   72.5 34.7)
+    (layer "F.CrtYd")
+    (width 0.05)
+  )
+
+  ;; ──────────────────────────────────────────────
+  ;; SIGNAL PINS 1-18
+  ;; 18x Ø1.0mm drill, Ø1.8mm pad, 2.54mm pitch
+  ;; Pin 1 at (0, 0); pins run in +X direction
+  ;; ──────────────────────────────────────────────
+  (pad "1"  thru_hole rect   (at  0.00 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "2"  thru_hole circle (at  2.54 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "3"  thru_hole circle (at  5.08 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "4"  thru_hole circle (at  7.62 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "5"  thru_hole circle (at 10.16 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "6"  thru_hole circle (at 12.70 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "7"  thru_hole circle (at 15.24 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "8"  thru_hole circle (at 17.78 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "9"  thru_hole circle (at 20.32 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "10" thru_hole circle (at 22.86 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "11" thru_hole circle (at 25.40 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "12" thru_hole circle (at 27.94 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "13" thru_hole circle (at 30.48 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "14" thru_hole circle (at 33.02 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "15" thru_hole circle (at 35.56 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "16" thru_hole circle (at 38.10 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "17" thru_hole circle (at 40.64 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+  (pad "18" thru_hole circle (at 43.18 0) (size 1.8 1.8) (drill 1.0) (layers "*.Cu" "*.Mask") (net 0 ""))
+
+  ;; ──────────────────────────────────────────────
+  ;; MOUNTING HOLES  (4x)
+  ;; 2.5mm PTH drill, 5.0mm pad (copper annular ring)
+  ;; Hole spacing per datasheet: 75.0mm (X) x 31.0mm (Y)
+  ;;
+  ;; Datasheet hole centers from bottom-left corner:
+  ;;   Left column X  = 2.5
+  ;;   Right column X = 2.5 + 75.0 = 77.5
+  ;;   Bottom row Y   = 2.5   (from bottom)  -> relative to pin1 = 2.5 - 1.8 = 0.7
+  ;;   Top row Y      = 2.5 + 31.0 = 33.5   -> relative to pin1 = 33.5 - 1.8 = 31.7
+  ;;
+  ;;   Left column X relative to pin1  = 2.5 - 8.0 = -5.5
+  ;;   Right column X relative to pin1 = 77.5 - 8.0 = 69.5
+  ;; ──────────────────────────────────────────────
+  (pad "" thru_hole circle (at -5.5  0.7) (size 5.0 5.0) (drill 2.5) (layers "*.Cu" "*.Mask"))
+  (pad "" thru_hole circle (at 69.5  0.7) (size 5.0 5.0) (drill 2.5) (layers "*.Cu" "*.Mask"))
+  (pad "" thru_hole circle (at -5.5 31.7) (size 5.0 5.0) (drill 2.5) (layers "*.Cu" "*.Mask"))
+  (pad "" thru_hole circle (at 69.5 31.7) (size 5.0 5.0) (drill 2.5) (layers "*.Cu" "*.Mask"))
+
+  ;; Mounting hole silkscreen circles (outside courtyard)
+  (fp_circle (center -5.5  0.7) (end -5.5  3.2) (layer "F.SilkS") (width 0.12))
+  (fp_circle (center 69.5  0.7) (end 69.5  3.2) (layer "F.SilkS") (width 0.12))
+  (fp_circle (center -5.5 31.7) (end -5.5 34.2) (layer "F.SilkS") (width 0.12))
+  (fp_circle (center 69.5 31.7) (end 69.5 34.2) (layer "F.SilkS") (width 0.12))
+
+)
