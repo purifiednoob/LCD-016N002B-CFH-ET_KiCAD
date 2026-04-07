@@ -1,6 +1,6 @@
 # Vishay LCD-016N002B-CFH-ET KiCAD Library
 
-A KiCAD symbol and footprint for the Vishay LCD-016N002B-CFH-ET 16×2 character LCD module with RGB LED backlight.
+An Amateur KiCAD symbol and footprint for the Vishay LCD-016N002B-CFH-ET 16×2 character LCD module with RGB LED backlight.
 
 ## How This Happened
 
